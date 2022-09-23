@@ -1,478 +1,421 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="Denzz" />
-  <base href="https://kizakixdapis.herokuapp.com" />
-  <link href="https://i.ibb.co/V0GZmHg/c38b1aa9-c6c3-42ec-9fb9-3e52f030d943.jpg" rel="icon" />
-  <title>Owner Xinzo</title>
-  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
-    type="text/css" />
-  <link href="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"
-    type="text/css" />
-  <link href="https://indrijunanda.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet" />
-  <meta property="og:title" content="Free Rest APIs>
-  <meta property="og:description"
-    content="Free Rest APIs By Denzz And Powered By KiZaKiXD" />
-  <meta property="og:image" content="https://i.ibb.co/V0GZmHg/c38b1aa9-c6c3-42ec-9fb9-3e52f030d943.jpg" />
-  <meta property="og:url" content="index.html" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/androidstudio.min.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-</head> 
-<body id="page-top">
-  <div id="wrapper">
-    <ul class="navbar-nav sidebar bg-gray-900 accordion bg-dark" id="accordionSidebar"
-      style="color: rgb(0, 8, 100);">
-      <a class="sidebar-brand d-flex align-items-center justify-content-center bg-gray-900"
-        style="color: rgb(7, 25, 201);">
-        <span style="color: rgb(25, 25, 25);">KIZAKIXD APIs</span>
-      </a>
-      <hr class="sidebar-divider my-0" />
-      <li class="nav-item active">
-        <a class="nav-link">
-          <i class="fas fa-fw fa-code"></i>
-          <span>Documentation</span></a>
-      </li>
-      <hr class="sidebar-divider" />
-      <div class="sidebar-heading">Features</div>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
-          aria-expanded="true" aria-controls="collapseBootstrap">
-          <i class="fas fa-fw fa-arrow-down"></i>
-       <span>Downloader API</span>
-        </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
-          <div class="bg-black py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Downloader Features</h6>
-            <a class="collapse-item" href="/downloader/youtube?link=https://www.youtube.com/watch?v=YLiRgeU7fQw">Youtube Downloader</a>
-            <a class="collapse-item" href="/downloader/play?query=anjay">Play</a>
-            <a class="collapse-item" href="/downloader/tiktok?link=https://vm.tiktok.com/ZSJcLPNpe/">Tiktok Downloader</a>
-            <a class="collapse-item" href="/downloader/tiktoknowm?link=https://vm.tiktok.com/ZSJcLPNpe">Tiktok Nowatermark</a>
-            <a class="collapse-item" href="/downloader/tiktokaudio?link=https://vm.tiktok.com/ZSJcLPNpe">Tiktok Audio</a>
-            <a class="collapse-item" href="/downloader/igdl?link=https://www.instagram.com/p/CTEDAEbpE4A/?utm_source=ig_web_copy_link">Instagram Downloader</a>
-            <a class="collapse-item" href="/downloader/igStory?username=kudettech_">Instagram Story Downloader</a>
-            <a class="collapse-item" href="/downloader/fbdl?link=https://www.facebook.com/AnnaTami.chan/videos/1259337391211843">Facebook Downloader</a>
-            <a class="collapse-item" href="/downloader/twitter?link=https://twitter.com/PassengersMovie/status/821025484150423557">Twitter Downloader</a>
-            <a class="collapse-item" href="/downloader/likeedl?link=https://likee.video/@vicky_marpaung/video/7006676628722311449">Likee Downloader</a>
-            <a class="collapse-item" href="/downloader/pindl?link=https://id.pinterest.com/pin/361906520063070744">Pinterest Downloader</a>
-            <a class="collapse-item" href="/downloader/pixiv?id=94216857&ext=.jpg">Pixiv Downloader</a>
-            <a class="collapse-item" href="/downloader/sfiledl?link=http://www.solidfiles.com/v/zdpVXjvRk8yaV">Solidfiles Downloadaer</a>
-            <a class="collapse-item" href="/downloader/mediafireDl?link=https://www.mediafire.com/file/pwxob70rpgma9lz/GBWhatsApp_v8.75%2528Tutorial_Yud%2529.apk/file">Mediafire Downloader</a>
-            <a class="collapse-item" href="/downloader/scdl?link=https://soundcloud.com/user-943750457/jang-ganggu-shine-of-black">Soundcloud Downloader</a>
-            <a class="collapse-item" href="/downloader/stickerpack?link=https://getstickerpack.com/stickers/pentol-7">Stickerpack Downloader</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSearch" aria-expanded="true"
-            aria-controls="collapseSearch">
-            <i class="fas fa-fw fa-search"></i>
-            <span>Search API</span>
-          </a>
-          <div id="collapseSearch" class="collapse" aria-labelledby="headingSearch" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Search API Features</h6>
-              <a class="collapse-item" href="/search/pinterest?query=anime">Pinterest Search</a>
-              <a class="collapse-item" href="/search/pixiv?query=anime">Pixiv Search</a>
-              <a class="collapse-item" href="/search/alphacoders?query=genshin">Alphacoders Search</a>
-              <a class="collapse-item" href="/wallpaperscraft?query=white">Wallpaperscraft Search</a>
-              <a class="collapse-item" href="/search/wallpapercave?query=genshin">Wallpapercave Search</a>
-              <a class="collapse-item" href="/search/konachan?query=azur_lane">ZeroChan Search</a>
-              <a class="collapse-item" href="/search/sticker?query=pentol">StickerPack Search</a>       
-              <a class="collapse-item" href="/search/google?query=anime">Google Search</a>
-              <a class="collapse-item" href="/search/happymod?query=coc">Happymod Search</a>  
-              <a class="collapse-item" href="/search/tiktok?query=anime">Tiktok Search</a>     
-              <a class="collapse-item" href="/search/randomtiktok">Random Tiktok</a> 
-             </div>
-          </div>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse-inner" aria-expanded="true" aria-controls="collapseForm">
-            <i class="app-menu__icon fa fa-laptop"></i>
-            <span>Anime API</span>
-        </a>
-        <div id="collapse-inner" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-            <div class="py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Anime Features</h6>
-            <a class="collapse-item" href="/anime/storyanime">Story Anime</a>
-            <a class="collapse-item" href="/anime/mynimekuSearch?query=mieruko">Mynimeku Search</a>
-            <a class="collapse-item" href="/anime/mynimekuDetail?link=https://www.mynimeku.com/anime/mieruko-chan">Mynimeku Details</a>
-            <a class="collapse-item" href="/anime/mynimekuDownload?link=https://www.mynimeku.com/episode/mieruko-chan-episode-01-subtitle-indonesia">Mynimeku Download</a>
-         </div>
-        </div>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePhotooxy"
-          aria-expanded="true" aria-controls="collapsePhotooxy">
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <span>Photooxy</span>
-        </a>
-        <div id="collapsePhotooxy" class="collapse" aria-labelledby="headingPhotooxy" data-parent="#accordionSidebar">
-          <div class="bg-light py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Photooxy Features</h6>
-            <a class="collapse-item" href="/photooxy/shadow?text=Hai">shadow</a>
-            <a class="collapse-item" href="/photooxy/cup?text=Hai">cup</a>
-            <a class="collapse-item" href="/photooxy/captain_amerika?text=Hai&text_2=hai juga">captain amerika</a>
-            <a class="collapse-item" href="/photooxy/romantic?text=Hai">romantic</a>
-            <a class="collapse-item" href="/photooxy/smoke?text=Hai">smoke</a>
-            <a class="collapse-item" href="/photooxy/burn_paper?text=Hai">burn paper</a>
-            <a class="collapse-item" href="/photooxy/naruto?text=Hai">naruto</a>
-            <a class="collapse-item" href="/photooxy/love_message?text=Hai">love message</a>
-            <a class="collapse-item" href="/photooxy/tik_tok?text=Hai&text_2=hai juga">TikTok</a>
-            <a class="collapse-item" href="/photooxy/flower_heart?text=Hai">flower heart</a>
-            <a class="collapse-item" href="/photooxy/wodden_board?text=Hai">wodden board</a>
-            <a class="collapse-item" href="/photooxy/glowing_neon?text=Hai">glowing neon</a>
-          </div>
-        </div>
-      </li>
-        <li class="nav-item">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOthers" aria-expanded="true"
-            aria-controls="collapseOthers">
-            <i class="fas fa-fw fa-leaf"></i>
-            <span>Primbon API</span>
-          </a>
-          <div id="collapseOthers" class="collapse" aria-labelledby="headingOthers" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">primbon Features</h6>
-              <a class="collapse-item" href="/primbon/artinama?nama=zaki">Artinama</a>
-              <a class="collapse-item" href="/ramalanjodoh?nama=zaki&pasangan=dini">Ramal Jodoh</a>
-            </div>
-          </div>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandom" aria-expanded="true"
-          aria-controls="collapseRandom">
-          <i class="fa fa-camera-retro" aria-hidden="true"></i>
-          <span>Random Image</span>
-        </a>
-        <div id="collapseRandom" class="collapse" aria-labelledby="headingRandom" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Random Img Features</h6>
-             <a class="collapse-item" href="/randomimg/milf">Milf</a>
-             <a class="collapse-item" href="/randomimg/waifu">Waifu</a>
-             <a class="collapse-item" href="/randomimg/husbu">Husbu</a>
-             <a class="collapse-item" href="/randomimg/loli">Loli</a>
-             <a class="collapse-item" href="/randomimg/cosplay">Cosplay</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=neko">neko</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=ass">ass</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=bdsm">BDSM</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=blowjob">blowjob</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=cum">cum</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=doujin">doujin</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=feet">feet</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=femdom">femdom</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=foxgirl">foxgirl</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=gifs">gifs</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=glasses">glasses</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=hentai">hentai</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=netorare">netorare</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=maid">maid</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=masturbation">masturbation</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=orgy">orgy</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=panties">panties</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=pussy">pussy</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=school">school</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=succubus">succubus</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=tentacles">tentacles</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=thighs">thighs</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=uglyBastard">uglyBastard</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=uniform">uniform</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=yuri">yuri</a>
-            <a class="collapse-item" href="/randomimg/akaneko?param=zettaiRyouiki">zettaiRyouiki</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnime" aria-expanded="true"
-          aria-controls="collapseAnime">
-          <i class="fas fa-fw fa-bullseye"></i>
-          <span>NSFW API</span>
-        </a>
-        <div id="collapseAnime" class="collapse" aria-labelledby="headingAnime" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">NSFW API Features</h6>
-            <a class="collapse-item" href="/nsfw/doujindesuSearch?query=shota">Doujindesu Search</a>
-            <a class="collapse-item" href="/nsfw/nHentaiSearch?query=miku">Nhentai Search</a>
-            <a class="collapse-item" href="/nsfw/nHentai?code=212121">Nhentai Info</a>
-            <a class="collapse-item" href="/nsfw/nhentaipdf?code=212121">Nhentai Downloader</a>      
-          </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGames" aria-expanded="true" aria-controls="collapseForm">
-            <i class="app-menu__icon fa fa-laptop"></i>
-            <span>Kuis & Fun API</span>
-        </a>
-        <div id="collapseGames" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-            <div class="py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Kuis Features</h6>
-            <a class="collapse-item" href="/games/tebakgambar">Tebak Gambar</a>
-         </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStress" aria-expanded="true" aria-controls="collapseForm">
-            <i class="app-menu__icon fa fa-bullseye"></i>
-            <span>Stres API</span>
-        </a>
-        <div id="collapseStress" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-            <div class="py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Stres Fiture</h6>
-            <a class="collapse-item" href="/stres/Wangy?nama=Jaki">Wangy</a>
-         </div>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCheck" aria-expanded="true"
-          aria-controls="collapseCheck">
-          <i class="fas fa-fw fa-check"></i>
-          <span>Convert API</span>
-        </a>
-        <div id="collapseCheck" class="collapse" aria-labelledby="headingCheck" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Convert API Features</h6>
-            <a class="collapse-item" href="/converter/towebp?url=https://i.ibb.co/7CM77tx/c180e14f43cf.jpg">jpg To webp</a>
-            <a class="collapse-item" href="/converter/tomp3?url=https://tinyurl.com/55e43fy3">Mp4 To mp3</a>
-          </div>
-        </div>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseother" aria-expanded="true"
-          aria-controls="collapseother">
-          <i class="fab fa-fw fa-wpforms"></i>
-          <span>Other API</span>
-        </a>
-        <div id="collapseother" class="collapse" aria-labelledby="headingother" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Other API Features</h6>
-            <a class="collapse-item" href="/other/nulis?text=%20aku%20sayang%20kamu%20>%20///<">Nulis Buku</a>
-            <a class="collapse-item" href="/other/ttp?text=love you <3">Text to Picture</a>
-            <a class="collapse-item" href="/other/attp?text=love you <3">Text to Gif</a>
-            <a class="collapse-item" href="/other/ssweb?link=https://tyz-api.herokuapp.com">ScreenShoot web</a>
-            <a class="collapse-item" href="/other/removebg?link=https://images-na.ssl-images-amazon.com/images/I/51vhBLpXhCL.jpg">Remove bg</a>
-            <a class="collapse-item" href="/other/merdeka">Merdeka News</a>
-            <a class="collapse-item" href="/other/meme">Meme</a>
-            <a class="collapse-item" href="/other/qrcode?text=hii">QR code</a>
-          </div>
-        </div>
-      </li>
-      <hr class="sidebar-divider" />
-      <div class="version" id="version-ruangadmin"></div>
-    </ul>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
-        <nav class="navbar navbar-expand navbar-dark bg-navbar topbar mb-4 static-top bg-gray-900">
-          <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
-          <ul class="navbar-nav ml-auto">
-            <div class="topbar-divider d-none d-sm-block"></div>
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <img class="img-profile rounded-circle"
-                  src="https://i.ibb.co/V0GZmHg/c38b1aa9-c6c3-42ec-9fb9-3e52f030d943.jpg"
-                  style="max-width: 110px" />
-                <span class="ml-2 d-none d-lg-inline small"></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-             <div class="col-sm-12 col-md-6">
-              <div class="card card-stats card-round">
-                <div class="card-header">
-          <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
-                  <h3 style="margin-bottom: 0">
-                    <div><p <i class="fas fa-user-circle text-info"></i> My Profile :</p></div>
-                  </h3>
-                <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
-                <div class="card-body mb-2">
-                  <p id="p1"> Hai Perkenalkan Saya Denis.</p>
-                  <p>Pelajar 14 Tahun Yang Ingin Belajar Mebuat Rest APIs,
-                  Tidak Lupa Terima Kasih Untuk Semua Contributor Dari Res APIs Ini,
-                  Mohon Dimaklumi Kalau Masih Terdapat Banyak Bug / Eror.</p>
-       </div>
-       </div>
-       </div>
-       </div>
-       </div>
-       </div>
-             <div class="col-sm-12 col-md-6">
-              <div class="card card-stats card-round">
-                <div class="card-header">
-          <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
-                  <h3 style="margin-bottom: 0">
-                    <i class="fas fa-info-circle text-danger"></i> Information
-                  </h3>
-                  &nbsp;
-          <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
-                  <h3 style="margin-bottom: 0">
-                    <i class="fa fa-sticky-note text-info"></i> Note :
-                  </h3>
-                  <ul>
-                    <li>Disarankan Menggunakan Dark Mode</li>
-                    <li>Lapor Owner Jika Menemukan Bug</li>
-                    <li>Api Ini Free Untuk Public</li>
-                    <li>Thanks For Template Rest Apis</li>
-                    <li>Silahkan Digunakan Kak</li>
-                    <li>Hanya Lanjutan Dari Rest Api Dulu</li>
-                    <li>Jangan Lupa Follow Social Media Owner</li>
-                    <li>Gak Usah Sarkas Gua Cuman Belajar</li>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <!-- Poppins font -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+   <!-- My CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <title>Ahmad Sufyan | Portfolio</title>
+   <link rel="shortcut icon" href="assets/computer.png" type="image/png">
+</head>
+
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+         <img src="assets/stronut2.png" alt="Ahmad Sufyan" class="rounded-circle myPhoto">
+         <a class="navbar-brand ml-3" href="/portfolio">AHMAD SUFYAN</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+               <a class="nav-link ml-3" href="#experience">Experience</a>
+               <a class="nav-link ml-3" href="#project">Project</a>
+               <a class="nav-link ml-3" href="#certificate">Certificate</a>
+               <a class="nav-link ml-3" href="https://ahmadsufyan.my.id/">Blog</a>
+               <a class="nav-link ml-3" href="mailto:ahmadsufyan514@gmail.com">Contact</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- end navbar -->
+
+   <!-- header -->
+   <section class="header">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6 align-self-center">
+               <h4>Hi, I Am Ahmad Sufyan</h4>
+               <p class="desc">I’m very interested on mobile programming and
+                  <b>enthusiast</b>
+                  to <b>learn something new</b>. </p>
+               <a href="mailto:ahmadsufyan514@gmail.com" class="btn btn-primary pt-3 pb-3 pl-4 pr-4"><i
+                     class="fas fa-envelope"></i> Email Me</a>
+               <span class="media-social">
+                  <a href="https://www.linkedin.com/in/ahmadsufyan455/" target="_blank" class="ml-4"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                  <a href="https://github.com/ahmadsufyan455/" target="_blank" class="ml-4"><i
+                        class="fab fa-github fa-2x"></i></a>
+                  <a href="https://www.youtube.com/channel/UCw-os_0NNQy-4y-z4qCEPSA" target="_blank" class="ml-4"><i
+                        class="fab fa-youtube fa-2x"></i></a>
+               </span>
+               <p class="download-cv mt-2">
+                  <a href="https://drive.google.com/file/d/1G_xAcrAJDhsuSjtTY0dosbvrd7-MERje/view?usp=sharing"
+                     target="_blank"><i class="fas fa-file-download"></i> My Resume</a>
+               </p>
+            </div>
+            <div class="col-md-6 d-lg-block">
+               <img src="assets/fyn-rmbg.png" alt="Android Developer" title="Android Developer" width="100%"
+                  class="vector1">
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end header -->
+
+   <!-- experience -->
+   <div class="container experience fade-in py-2 mt-4 mb-4" id="experience">
+      <h5 class="mb-5">My Experience</h5>
+      <!-- timeline item 1 -->
+      <div class="row no-gutters">
+         <div class="col-sm">
+            <!--spacer-->
+         </div>
+         <!-- timeline item 1 center dot -->
+         <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+            <div class="row h-50">
+               <div class="col">&nbsp;</div>
+               <div class="col">&nbsp;</div>
+            </div>
+            <h5 class="m-2">
+               <span class="badge badge-pill bg-light border">&nbsp;</span>
+            </h5>
+            <div class="row h-50">
+               <div class="col border-right">&nbsp;</div>
+               <div class="col">&nbsp;</div>
+            </div>
+         </div>
+         <!-- timeline item 1 event content -->
+         <div class="col-sm py-2">
+            <div class="card">
+               <div class="card-body">
+                  <div class="float-right small">March 2022 - Present</div>
+                  <h4>Mobile Developer</h4>
+                  <h6>PT Global Inovasi Ventura</h5>
+                  <ul class="card-text">
+                     <li>Design, build, and maintain high performance, reusable, and reliable Mobile Apps.</li>
+                     <li>Work on bug fixing and improving application performance.</li>
                   </ul>
                </div>
-          <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
-                  <h3 style="margin-bottom: 0">
-                    <i class="fa fa-globe text-info"></i> Browser Info
-                  </h3>
-                  <div class="card-body mb-2">
-                    <p></p>
-            <div id="browser_info"></div>
-            <script>
-              let arrBulan = [
-                "Januari",
-                "Februari",
-                "Maret",
-                "April",
-                "Mei",
-                "Juni",
-                "Juli",
-                "Agustus",
-                "September",
-                "Oktober",
-                "November",
-                "Desember",
-              ];
-              let txt = "";
-              txt +=
-                "<p><li><b>Browser CodeName</b>: " +
-                navigator.appCodeName +
-                "</p>";
-              txt += "<p><li><b>Browser Name</b>: " + navigator.appName + "</p>";
-              txt +=
-                "<p><li><b>Cookies Enabled</b>: " +
-                navigator.cookieEnabled +
-                "</p>";
-              txt += "<p><li><b>Browser Online</b>: " + navigator.onLine + "</p>";
-              txt += "<p><li><b>Platform</b>: " + navigator.platform + "</p>";
-              txt += "<p><li><b>User-agent</b>: " + navigator.userAgent + "</p>";
-              let text_el = document.querySelector("div#browser_info");
-              setInterval(() => {
-                var d = new Date();
-                const jam = d.getHours().toString().padStart(2, 0);
-                const menit = d.getMinutes().toString().padStart(2, 0);
-                const detik = d.getSeconds().toString().padStart(2, 0);
-                const tgl = d.getDate();
-                const bln = d.getMonth();
-                const thn = d.getFullYear();
-                const bulan = arrBulan[bln];
-                text_el.innerHTML =
-                  txt +
-                  "<li><b>Date</b>: " +
-                  jam +
-                  ":" +
-                  menit +
-                  ":" +
-                  detik +
-                  "~" +
-                  tgl +
-                  "-" +
-                  bulan +
-                  "-" +
-                  thn +
-                  "<br>";
-              }, 250);
-            </script>
-          </div>
-           </div>
-          <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
-                  <h3 style="margin-bottom: 0">
-                    <i class="fa fa-users text-info"></i> Thanks To For :
-                  </h3>
-                <div class="card-body mb-2">       
-                    <li>Allah Swt</li>
-                    <li>Nabi Muhammad Saw.</li>
-                    <li>Kedua Orang Tua</li>
-                    <li>My Friends</li>
-                    <li>KiZakiXD</li>
-                    <li>erzawife</>
-                    <li>Kirito Senpai</li>
-                    <li>Arya-Was</li>
-                    <li>Penyedia Template</li>
-                    <li>Penyedia Database</li>
-                    <li>All Team</li>
-                    <li>All Mastah</li>
-              </div>
-             </div>
             </div>
-           </div>
-          </div>
          </div>
-         &nbsp;
-             <div class="col-sm-12 col-md-6">
-              <div class="card card-stats card-round">
-                <div class="card-header">
-          <div id="demo" class="alert alert-dark alert-dismissible" role="alert">
-                  <h3 style="margin-bottom: 0">
-                    <i class="fa fa-envelope" style="color:magenta"></i> Social Media
-                  </h3>
-                <div class="card-body mb-2">
-                  <p>Contact Me :</p>
-                <p>
-                    <a href="https://wa.me/6285642625763" class="text-white">
-                        <ul>
-                            <li><i class="fab fa-whatsapp text-white"></i> WhatsApp</li> 
-                    <a href="https://t.me/xinzuo" class="text-white">                   
-                            <li><i class="fab fa-telegram text-white"></i> Telegram</li>                       
-                    <a href="https://instagram.com/xinzuo_bot" class="text-white">                   
-                            <li><i class="fab fa-instagram text-white"></i> Instagram</li>                           
-                    <a href="https://github.com/Deniscapek" class="text-white">                    
-                            <li><i class="fab fa-github text-white"></i> Github</li>
-                    <a href="https://youtube.com/channel/UChfB_aIFvvp7SW2FOR0Fx4A" class="text-white">                    
-                            <li><i class="fab fa-youtube text-white"></i> Youtube</li>
-                        </ul>
-                    </a>
-                </div>
-              </div>
-            </div>
-            </div>
-             </div>
-             &nbsp;
-<span> <br> </span>
-          <footer class="sticky-footer bg-gray">
-            <div class="container my-auto">
-              <div class="copyright text-center my-auto">
-                <span>copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  <b><a href="https://github.com/kizakixd"
-                      target="_blank">Made With 🤍 Denis</a></b>
-                </span>
-              </div>
-            </div>
-          </footer>
-        </div>
       </div>
-    </div>
+      <!--/row-->
+      <!-- timeline item 2 -->
+      <div class="row no-gutters">
+         <div class="col-sm py-2">
+            <div class="card">
+               <div class="card-body">
+                  <div class="float-right small">Aug 2021 - Present</div>
+                  <h4>Google Developer Student Clubs Lead</h4>
+                  <p>Learn together, build community on campus, work with core teams and organize technology events.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+            <div class="row h-50">
+               <div class="col border-right">&nbsp;</div>
+               <div class="col">&nbsp;</div>
+            </div>
+            <h5 class="m-2">
+               <span class="badge badge-pill bg-light border">&nbsp;</span>
+            </h5>
+            <div class="row h-50">
+               <div class="col border-right">&nbsp;</div>
+               <div class="col">&nbsp;</div>
+            </div>
+         </div>
+         <div class="col-sm">
+            <!--spacer-->
+         </div>
+      </div>
+      <!--/row-->
+      <!-- timeline item 3 -->
+      <div class="row no-gutters">
+         <div class="col-sm">
+            <!--spacer-->
+         </div>
+         <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+            <div class="row h-50">
+               <div class="col border-right">&nbsp;</div>
+               <div class="col">&nbsp;</div>
+            </div>
+            <h5 class="m-2">
+               <span class="badge badge-pill bg-light border">&nbsp;</span>
+            </h5>
+            <div class="row h-50">
+               <div class="col border-right">&nbsp;</div>
+               <div class="col">&nbsp;</div>
+            </div>
+         </div>
+         <div class="col-sm py-2">
+            <div class="card">
+               <div class="card-body">
+                  <div class="float-right small">Oct 2021 - Feb 2022</div>
+                  <h4>Mobile Developer Intern</h4>
+                  <h6>LingoTalk.co</h6>
+                  <ul>
+                     <li>Develop established mobile application with Flutter Framework.</li>
+                     <li>Work closely with Mobile Manager and Back-End Team.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/row-->
+      <!-- timeline item 4 -->
+      <div class="row no-gutters">
+         <div class="col-sm py-2">
+            <div class="card">
+               <div class="card-body">
+                  <div class="float-right small">Feb 2021 - Jun 2021</div>
+                  <h4>Mobile Developer Trainee</h4>
+                  <h6>Bangkit Academy</h6>
+                  <ul>
+                     <li>Learning mobile development and soft skill career development.</li>
+                     <li>Completed android developer learning path at Dicoding.</li>
+                     <li>Working with a team on a capstone project, build an app to detect eye disease.</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+            <div class="row h-50">
+               <div class="col border-right">&nbsp;</div>
+               <div class="col">&nbsp;</div>
+            </div>
+            <h5 class="m-2">
+               <span class="badge badge-pill bg-light border">&nbsp;</span>
+            </h5>
+            <div class="row h-50">
+               <div class="col">&nbsp;</div>
+               <div class="col">&nbsp;</div>
+            </div>
+         </div>
+         <div class="col-sm">
+            <!--spacer-->
+         </div>
+      </div>
+      <!--/row-->
+   </div>
+   <!-- experience -->
 
-    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>
-    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
-    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://indrijunanda.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="https://indrijunanda.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
-  </div>
-  <audio hidden autoplay loop>
-    <source src="https://d.top4top.io/m_2371f2w6a0.mp3" type="audio/mp3">
-  </audio>
+   <!-- project -->
+   <section class="project fade-in mt-5 mb-5" id="project">
+      <div class="container">
+         <h5 class="mb-4">My Project</h5>
+         <div class="card">
+            <div class="row">
+               <div class="col-lg-4 mt-3" align="center">
+                  <img src="assets/time.png" width="100%" alt="">
+                  <div class="row mt-3">
+                     <div class="col">
+                        <a href="https://github.com/ahmadsufyan455/Time-Management-App" target="_blank"><i
+                              class="fas fa-code"></i>
+                           Source Code</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mt-3" align="center">
+                  <img src="assets/moviecenter.png" width="100%" alt="">
+                  <div class="row mt-3">
+                     <div class="col">
+                        <a href="https://github.com/ahmadsufyan455/Movie-Center" target="_blank"><i
+                              class="fas fa-code"></i> Source
+                           Code</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mt-3" align="center">
+                  <img src="assets/githubuser.png" width="100%" alt="">
+                  <div class="row mt-3">
+                     <div class="col">
+                        <a href="https://github.com/ahmadsufyan455/github-user-search" target="_blank"><i
+                              class="fas fa-code"></i>
+                           Source Code</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end project -->
+
+   <!-- certificate -->
+   <section class="certificate fade-in mt-5 mb-5" id="certificate">
+      <div class="container">
+         <h5 class="mb-4">Certificate</h5>
+         <div class="card">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <img src="assets/fundamental.png" class="d-block" alt="...">
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                           <h3 class="mt-2">Belajar Fundamental Aplikasi Android (BFAA)</h3>
+                           <p>By: Dicoding Indonesia</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <img src="assets/jetpack.png" class="d-block" alt="...">
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                           <h3 class="mt-2">Belajar Android jetpack Pro</h3>
+                           <p>By: Dicoding Indonesia</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <img src="assets/made.png" class="d-block" alt="...">
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                           <h3 class="mt-2">Menjadi Android Developer Expert</h3>
+                           <p>By: Dicoding Indonesia</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <img src="assets/aad.png" class="d-block" alt="...">
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                           <h3 class="mt-2">Associate Android Developer</h3>
+                           <p>By: Google Developers</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <img src="assets/gdsc_lead.png" class="d-block" alt="...">
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                           <h3 class="mt-2">Google Developer Student Clubs</h3>
+                           <p>By: Google Developers</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <img src="assets/lingotalk_intern.png" class="d-block" alt="...">
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                           <h3 class="mt-2">Mobile Engineer Intern</h3>
+                           <p>By: LingoTalk.co</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <img src="assets/bangkit_academy.png" class="d-block" alt="...">
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                           <h3 class="mt-2">Mobile Development Trainee</h3>
+                           <p>By: Bangkit Academy</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end certificate -->
+
+   <!-- tools -->
+   <section class="tools fade-in mb-5">
+      <div class="container">
+         <div class="card">
+            <div class="row">
+               <div class="col d-flex justify-content-center">
+                  <h5 class="mb-4">Tools & Skills</h5>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md d-flex justify-content-center mt-4">
+                  <img src="assets/figma.png" alt="figma" title="Figma">
+               </div>
+               <div class="col-md d-flex justify-content-center align-self-center mt-4">
+                  <img src="assets/flutter.png" width="80px" height="80px" alt="flutter" title="Flutter">
+               </div>
+               <div class="col-md d-flex justify-content-center mt-4">
+                  <img src="assets/kotlin.png" alt="android studio" title="Android Studio">
+               </div>
+               <div class="col-md d-flex justify-content-center mt-4">
+                  <img src="assets/dart.png" alt="dart" title="Dart">
+               </div>
+               <div class="col-md d-flex justify-content-center mt-4">
+                  <img src="assets/android-studio.png" alt="android" title="Android Studio">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end tools -->
+
+   <!-- footer -->
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col" align="center">
+               <p><i class="fas fa-map-marker-alt"></i> Lombok, Indonesia</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+
+
+   <!-- My Js -->
+   <script src="main.js"></script>
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+   </script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+   </script>
 </body>
 
 </html>
